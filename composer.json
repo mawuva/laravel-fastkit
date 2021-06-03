@@ -5,7 +5,7 @@
         "mawuekom","laravel",
         "laravel-fastkit", "fastkit"
     ],
-    "homepage": "https://github.com/mawuekom/laravel-fastkit",
+    "homepage": "https://packagist.org/packages/mawuekom/laravel-fastkit",
     "license": "MIT",
     "type": "library",
     "authors": [
