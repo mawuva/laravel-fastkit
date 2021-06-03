@@ -1,0 +1,62 @@
+{
+    "name": "mawuekom/laravel-fastkit",
+    "description": "Utils to deal quickly and easily with laravel or lumen project",
+    "keywords": [
+        "mawuekom","laravel",
+        "laravel-fastkit", "fastkit"
+    ],
+    "homepage": "https://github.com/mawuekom/laravel-fastkit",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ephraïm Seddor",
+            "email": "seddorephraim7@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0",
+        "illuminate/http": "^8.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "barryvdh/laravel-cors": "^2.0",
+        "urameshibr/lumen-form-request": "^1.5",
+        "mawuekom/laravel-data-repository": "dev-main",
+        "mawuekom/laravel-whelper": "dev-main"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mawuekom\\Fastkit\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mawuekom\\Fastkit\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mawuekom\\Fastkit\\FastkitServiceProvider"
+            ],
+            "aliases": {
+                "Fastkit": "Mawuekom\\Fastkit\\FastkitFacade"
+            }
+        }
+    }
+}
